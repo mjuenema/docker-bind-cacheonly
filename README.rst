@@ -32,6 +32,7 @@ or build the image yourself.
 Usage
 =====
 
-docker run --name bind -d --restart=always \
-  --publish 53:53/tcp --publish 53:53/udp
+  docker run --name bind -d --restart=always --publish 53:53/udp mjuenema/docker-bind-cacheonly
+  
+
 
