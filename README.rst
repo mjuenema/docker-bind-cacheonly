@@ -2,6 +2,8 @@
 docker-bind-cacheonly
 *********************
 
+.. note:: This is work-in-progress!
+
 Introduction
 ============
 
