@@ -15,7 +15,6 @@ This Dockerfile uses the `Alpine Linux`_ image as base to keep the resulting ima
 
 .. _`chapter 4`: http://www.zytrax.com/books/dns/ch4/index.html#caching
 .. _`chapter 6`: http://www.zytrax.com/books/dns/ch6/#caching on the same site
-.. _`Pro DNS and BIND`: http://www.netwidget.net/books/apress/dns/
 .. _`Alpine Linux`: https://hub.docker.com/_/alpine/
 
 Installation
@@ -40,5 +39,14 @@ There are a couple of things to be aware of:
   and external DNS servers.
 * Another DNS server may already be running on the host. In this case the NAT rule Docker
   tries to add to the firewall configuration will be rejected.
+  
+See also
+========
+
+* `Deploying a DNS Server using Docker`_.
+* `Pro DNS and BIND`_ book.
+
+.. _`Deploying a DNS Server using Docker`: https://www.damagehead.com/blog/2015/04/28/deploying-a-dns-server-using-docker
+.. _`Pro DNS and BIND`: http://www.netwidget.net/books/apress/dns/
 
 Markus Juenemann, 03-Sep-2016
