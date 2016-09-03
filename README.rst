@@ -2,8 +2,6 @@
 docker-bind-cacheonly
 *********************
 
-.. note:: This is work-in-progress!
-
 Introduction
 ============
 
@@ -38,7 +36,7 @@ Usage
 
 There are a couple of things to be aware of:
 
-* Your hosts firewall configuration may prevent DNS traffic between the Docker container
+* Your host's firewall configuration may prevent DNS traffic between the Docker container
   and external DNS servers.
 * Another DNS server may already be running on the host. In this case the NAT rule Docker
   tries to add to the firewall configuration will be rejected.
