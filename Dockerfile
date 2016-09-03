@@ -8,4 +8,6 @@ RUN apk update && \
 
 ADD named.conf /etc/bind/named.conf
 
-ENTRYPOINT ["/usr/sbin/named","-u","named","-g"]
+RUN wget -O /var/bind/root.cache  ftp://ftp.internic.net/domain/named.cache
+
+CMD /usr/sbin/named -u named -f

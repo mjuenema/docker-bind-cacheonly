@@ -34,7 +34,13 @@ or build the image yourself.
 Usage
 =====
 
-  docker run --name bind -d --restart=always --publish 53:53/udp mjuenema/docker-bind-cacheonly
-  
+  docker run --name bind --publish 53:53/udp mjuenema/docker-bind-cacheonly
 
+There are a couple of things to be aware of:
 
+* Your hosts firewall configuration may prevent DNS traffic between the Docker container
+  and external DNS servers.
+* Another DNS server may already be running on the host. In this case the NAT rule Docker
+  tries to add to the firewall configuration will be rejected.
+
+Markus Juenemann, 03-Sep-2016
